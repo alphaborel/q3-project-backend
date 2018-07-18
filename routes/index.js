@@ -17,4 +17,18 @@ router.get("/api/users", function(req, res){
     })
 })
 
+router.post("/api/users", function(req, res){
+  knex('users').where('email', req.body.email).then(results => {
+    res.send(results)
+  })
+})
+
+
+router.get("/api/users/:id", function(req, res){
+  knex('users').where('email', req.session.email).then((results)=>{
+        res.send(results);
+    })
+})
+
+
 module.exports = router;
