@@ -5,9 +5,9 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('poll').insert([
-        {usr_id: 1, date: '07 21 2018', activity: 'Go Hunting'},
-        {usr_id: 1, date: '07 22 2018', activity: 'Go Hiking'},
-        {usr_id: 1, date: '07 23 2018', activity: 'Dirt Bikes'}
+        {usr_id: 1, date: 'SAT Jul 21 2018 00:00:00 GMT-0700 (Mountain Standard Time)', activity: 'Go Hunting'},
+        {usr_id: 1, date: 'SUN Jul 22 2018 00:00:00 GMT-0700 (Mountain Standard Time)', activity: 'Go Hiking'},
+        {usr_id: 1, date: 'MON Jul 23 2018 00:00:00 GMT-0700 (Mountain Standard Time)', activity: 'Dirt Bikes'}
       ]);
     });
 };
